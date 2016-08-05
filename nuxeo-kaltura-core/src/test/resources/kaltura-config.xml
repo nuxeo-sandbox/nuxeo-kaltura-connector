@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<component name="org.nuxeo.kaltura.test.service" version="1.0">
+
+  <extension target="org.nuxeo.kaltura.service" point="configuration">
+    <configuration>
+    </configuration>
+  </extension>
+
+</component>

@@ -1,0 +1,5 @@
+<component name="org.nuxeo.kaltura.core.schema">
+    <extension target="org.nuxeo.ecm.core.schema.TypeService" point="schema">
+        <schema name="kaltura" prefix="kaltura" override="true" src="data/schemas/kaltura.xsd"/>
+    </extension>
+</component>

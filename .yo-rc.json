@@ -1,0 +1,11 @@
+{
+  "generator-nuxeo": {
+    "promptValues": {
+      "parent_package": "org.nuxeo.kaltura",
+      "parent_artifact": "nuxeo-kaltura-parent",
+      "nuxeo_version": "8.3",
+      "package": "org.nuxeo.kaltura"
+    },
+    "multi": true
+  }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<component name="org.nuxeo.kaltura.adapters.kaltura">
+
+  <extension target="org.nuxeo.ecm.core.api.DocumentAdapterService" point="adapters">
+    <adapter class="org.nuxeo.kaltura.adapter.KalturaAdapter"
+             factory="org.nuxeo.kaltura.adapter.KalturaAdapterFactory"/>
+  </extension>
+
+</component>

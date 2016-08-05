@@ -1,0 +1,18 @@
+<component name="org.nuxeo.kaltura.thumbnail">
+
+    <extension point="thumbnailFactory" target="org.nuxeo.ecm.core.api.thumbnail.ThumbnailService">
+        <thumbnailFactory
+                facet="Video"
+                factoryClass="org.nuxeo.kaltura.thumbnail.KalturaVideoThumbnailFactory"
+                name="thumbnailVideoKalturaFactory"/>
+        <thumbnailFactory
+                facet="Picture"
+                factoryClass="org.nuxeo.kaltura.thumbnail.KalturaPictureThumbnailFactory"
+                name="thumbnailPictureKalturaFactory"/>
+        <thumbnailFactory
+                facet="Audio"
+                factoryClass="org.nuxeo.kaltura.thumbnail.KalturaAudioThumbnailFactory"
+                name="thumbnailAudioKalturaFactory"/>
+    </extension>
+
+</component>

@@ -1,0 +1,15 @@
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Manifest-Version: 1.0
+Bundle-Vendor: org.nuxeo.kaltura
+Bundle-Version: 1.0.0
+Bundle-Name: nuxeo-kaltura-core
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.nuxeo.kaltura.core;singleton=true
+Nuxeo-Component: OSGI-INF/kultura-importer-service.xml,
+ OSGI-INF/operation-contrib.xml,
+ OSGI-INF/blobprovider-contrib.xml,
+ OSGI-INF/thumbnail-contrib.xml,
+ OSGI-INF/schema-contrib.xml,
+ OSGI-INF/type-contrib.xml,
+ OSGI-INF/adapter-contrib.xml

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<component name="org.nuxeo.kaltura.service" version="1.0">
+
+  <implementation class="org.nuxeo.kaltura.service.KalturaImporterImpl" />
+
+  <service>
+    <provide interface="org.nuxeo.kaltura.service.KalturaImporter" />
+  </service>
+
+  <extension-point name="configuration">
+    <documentation>Configuration of the Kaltura service</documentation>
+    <object class="org.nuxeo.kaltura.service.KalturaAccountDescriptor" />
+  </extension-point>
+
+</component>
