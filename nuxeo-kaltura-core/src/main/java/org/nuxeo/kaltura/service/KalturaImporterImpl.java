@@ -175,6 +175,8 @@ public class KalturaImporterImpl extends DefaultComponent implements KalturaImpo
         adapter.setThumbnailUrl(entry.thumbnailUrl);
         adapter.setSearchtext(entry.searchText);
         adapter.setModified(entry.updatedAt);
+        adapter.setPlays(media.plays);
+        adapter.setViews(media.views);
 
         //Add type specific metadata
         switch (media.mediaType) {

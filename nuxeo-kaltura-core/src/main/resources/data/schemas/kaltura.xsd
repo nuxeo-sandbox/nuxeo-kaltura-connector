@@ -38,5 +38,7 @@
   <xs:element name="thumbnailUrl" type="xs:string"/>
   <xs:element name="searchText" type="xs:string"/>
   <xs:element name="modified" type="xs:integer"/>
+  <xs:element name="views" type="xs:integer"/>
+  <xs:element name="plays" type="xs:integer"/>
 
 </xs:schema>

@@ -31,8 +31,8 @@ public class KalturaAdapter {
   public static final String thumbnailUrlXpath = "kaltura:thumbnailUrl";
   public static final String searchTextXpath = "kaltura:searchText";
   public static final String modifiedXpath = "kaltura:modified";
-
-  long modified;
+  public static final String playsXpath = "kaltura:plays";
+  public static final String viewsXpath = "kaltura:views";
 
   public KalturaAdapter(DocumentModel doc) {
     this.doc = doc;
@@ -85,4 +85,21 @@ public class KalturaAdapter {
   public void setModified(long modified) {
     doc.setPropertyValue(modifiedXpath,modified);
   }
+
+  public long getPlays() {
+    return (long) doc.getPropertyValue(playsXpath);
+  }
+
+  public void setPlays(long plays) {
+    doc.setPropertyValue(playsXpath,plays);
+  }
+
+  public long getViews() {
+    return (long) doc.getPropertyValue(viewsXpath);
+  }
+
+  public void setViews(long views) {
+    doc.setPropertyValue(viewsXpath,views);
+  }
+
 }
