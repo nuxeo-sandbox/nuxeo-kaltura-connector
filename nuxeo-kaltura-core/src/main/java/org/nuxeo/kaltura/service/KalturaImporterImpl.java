@@ -204,7 +204,7 @@ public class KalturaImporterImpl extends DefaultComponent implements KalturaImpo
     protected DocumentModel getOrCreateFileDocument(DocumentModel root, String docType, String itemId){
         CoreSession session = root.getCoreSession();
         String query = String.format(
-                "Select * From Document Where %s='%s'",KalturaAdapter.idXpath,itemId);
+                "Select * From Document Where %s='%s' AND ecm:isCheckedInVersion = 0",KalturaAdapter.idXpath,itemId);
         DocumentModelList list = session.query(query);
         if (list.size()>0) return list.get(0);
 
