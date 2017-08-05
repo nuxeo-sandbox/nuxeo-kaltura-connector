@@ -23,6 +23,7 @@ import org.nuxeo.ecm.core.api.Blob;
 import org.nuxeo.ecm.core.api.CoreSession;
 import org.nuxeo.ecm.core.api.DocumentModel;
 import org.nuxeo.ecm.core.api.NuxeoException;
+import org.nuxeo.ecm.core.blob.BlobInfo;
 import org.nuxeo.ecm.core.blob.BlobManager;
 import org.nuxeo.ecm.core.blob.BlobProvider;
 import org.nuxeo.ecm.platform.picture.thumbnail.ThumbnailPictureFactory;
@@ -39,7 +40,7 @@ public class KalturaPictureThumbnailFactory extends ThumbnailPictureFactory {
         if (!doc.hasFacet(KalturaAdapter.KALTURA_FACET)) return super.getThumbnail(doc,session);
         KalturaAdapter adapter = doc.getAdapter(KalturaAdapter.class);
         BlobProvider blobProvider = Framework.getService(BlobManager.class).getBlobProvider("kaltura");
-        BlobManager.BlobInfo blobInfo = new BlobManager.BlobInfo();
+        BlobInfo blobInfo = new BlobInfo();
         blobInfo.key = "kaltura:"+adapter.getThumbnailUrl();
         blobInfo.filename = "thumbnail"+adapter.getId()+".jpg";
         blobInfo.mimeType = "image/jpeg";

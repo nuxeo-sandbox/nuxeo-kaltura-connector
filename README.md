@@ -1,4 +1,4 @@
-nuxeo-kaltura-crawler
+nuxeo-kaltura-connector
 =====================
 
 

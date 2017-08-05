@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.nuxeo.kaltura</groupId>
     <artifactId>nuxeo-kaltura-parent</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>9.2-SNAPSHOT</version>
   </parent>
   <artifactId>nuxeo-kaltura-core</artifactId>
   <name>Nuxeo kaltura core</name>
@@ -23,14 +23,6 @@
     <dependency>
       <groupId>org.nuxeo.ecm.core</groupId>
       <artifactId>nuxeo-core</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.nuxeo.ecm.liveconnect</groupId>
-      <artifactId>nuxeo-liveconnect-core</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.nuxeo.ecm.platform</groupId>
-      <artifactId>nuxeo-platform-oauth</artifactId>
     </dependency>
     <dependency>
       <groupId>org.nuxeo.ecm.automation</groupId>
@@ -61,7 +53,7 @@
     <dependency>
       <groupId>org.nuxeo.http.blobprovider</groupId>
       <artifactId>nuxeo-http-blobprovider-core</artifactId>
-      <version>8.3-SNAPSHOT</version>
+      <version>${project.version}</version>
     </dependency>
 
     <dependency>

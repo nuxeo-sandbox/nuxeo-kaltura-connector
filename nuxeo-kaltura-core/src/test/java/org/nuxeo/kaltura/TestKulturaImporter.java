@@ -26,7 +26,7 @@ import org.nuxeo.ecm.core.api.CoreSession;
 import org.nuxeo.ecm.core.api.DocumentModel;
 import org.nuxeo.ecm.core.api.DocumentModelList;
 import org.nuxeo.ecm.platform.test.PlatformFeature;
-import org.nuxeo.kaltura.service.KalturaImporter;
+import org.nuxeo.kaltura.service.KalturaService;
 import org.nuxeo.runtime.test.runner.Deploy;
 import org.nuxeo.runtime.test.runner.Features;
 import org.nuxeo.runtime.test.runner.FeaturesRunner;
@@ -54,7 +54,7 @@ public class TestKulturaImporter {
     CoreSession session;
 
     @Inject
-    protected KalturaImporter kulturaImporter;
+    protected KalturaService kulturaImporter;
 
     @Test
     public void testService() {

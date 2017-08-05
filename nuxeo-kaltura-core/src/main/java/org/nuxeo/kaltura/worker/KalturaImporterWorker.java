@@ -25,7 +25,7 @@ import org.nuxeo.ecm.core.api.DocumentModel;
 import org.nuxeo.ecm.core.api.IdRef;
 import org.nuxeo.ecm.core.api.NuxeoException;
 import org.nuxeo.ecm.core.work.AbstractWork;
-import org.nuxeo.kaltura.service.KalturaImporter;
+import org.nuxeo.kaltura.service.KalturaService;
 import org.nuxeo.runtime.api.Framework;
 import org.nuxeo.runtime.transaction.TransactionHelper;
 
@@ -46,7 +46,7 @@ public class KalturaImporterWorker extends AbstractWork {
 
         openSystemSession();
         DocumentModel root = session.getDocument(new IdRef(docId));
-        KalturaImporter importer = Framework.getService(KalturaImporter.class);
+        KalturaService importer = Framework.getService(KalturaService.class);
         try {
             importer.doImport(root);
             setStatus("Done");

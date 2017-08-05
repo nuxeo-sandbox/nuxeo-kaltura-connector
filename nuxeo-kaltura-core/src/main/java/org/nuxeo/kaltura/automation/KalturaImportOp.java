@@ -24,7 +24,7 @@ import org.nuxeo.ecm.automation.core.annotations.Context;
 import org.nuxeo.ecm.automation.core.annotations.Operation;
 import org.nuxeo.ecm.automation.core.annotations.OperationMethod;
 import org.nuxeo.ecm.core.api.DocumentModel;
-import org.nuxeo.kaltura.service.KalturaImporter;
+import org.nuxeo.kaltura.service.KalturaService;
 
 
 @Operation(
@@ -37,11 +37,11 @@ public class KalturaImportOp {
     public static final String ID = "KalturaImportOp";
 
     @Context
-    protected KalturaImporter service;
+    protected KalturaService service;
 
     @OperationMethod
     public DocumentModel run(DocumentModel doc) throws Exception {
-        service.schedule(doc);
+        service.scheduleImport(doc);
         return doc;
     }
 }

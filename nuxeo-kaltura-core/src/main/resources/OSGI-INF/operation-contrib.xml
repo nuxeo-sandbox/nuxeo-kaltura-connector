@@ -3,6 +3,7 @@
     <extension target="org.nuxeo.ecm.core.operation.OperationServiceComponent"
                point="operations">
         <operation class="org.nuxeo.kaltura.automation.KalturaImportOp"/>
+        <operation class="org.nuxeo.kaltura.automation.KalturaPublishOp"/>
     </extension>
 
 </component>

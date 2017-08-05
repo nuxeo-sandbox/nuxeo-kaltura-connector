@@ -2,7 +2,7 @@
 <package type="addon" name="nuxeo-kaltura" version="@VERSION@">
   <title>Nuxeo kaltura</title>
   <description>
-    <p>Put here an HTML description of your Nuxeo Package.</p>
+    <p>Plugin for Kaltura</p>
   </description>
   <!-- <home-page>http://doc.nuxeo.com/</home-page> -->
   <vendor>nuxeo</vendor>
