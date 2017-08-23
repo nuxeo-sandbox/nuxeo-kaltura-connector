@@ -1,6 +1,7 @@
 nuxeo-kaltura-connector
 =====================
 
+[![Build Status](https://qa.nuxeo.org/jenkins/buildStatus/icon?job=Sandbox/sandbox_nuxeo-kaltura-connector-master)](https://qa.nuxeo.org/jenkins/job/Sandbox/sandbox_nuxeo-kaltura-connector-master)
 
 ## List of Features (details below)
 
