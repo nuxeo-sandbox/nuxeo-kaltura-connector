@@ -34,7 +34,7 @@ import org.nuxeo.kaltura.service.KalturaService;
         description = "Publish Media to Kaltura.")
 public class KalturaPublishOp {
 
-    public static final String ID = "KalturaImportOp";
+    public static final String ID = "KalturaPublishOp";
 
     @Context
     protected KalturaService service;
